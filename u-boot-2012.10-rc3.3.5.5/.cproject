@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.toolchain.gnu.cross.base.1966410826">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.cross.base.1966410826" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="cdt.managedbuild.toolchain.gnu.cross.base.1966410826" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.cross.base.1966410826.633500278" name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.298656271" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1182214687" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder arguments="-s" command="make" enableAutoBuild="true" id="cdt.managedbuild.target.gnu.builder.base.1227712007" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1205703118" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.433679897" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.960193621" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.276547677" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__KERNEL__=1"/>
+									<listOptionValue builtIn="false" value="__GNUC__=1"/>
+								</option>
+								<option id="gnu.c.compiler.option.include.paths.814705024" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/u-boot-2012.10-rc3/arch/arm/include/asm/arch-cygnus}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2020598362" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1499566952" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1502190635" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1187840825" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1678662678" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1205089490" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="arch/avr32/|arch/blackfin/|arch/m68k/|arch/microblaze/|arch/mips/|arch/nds32/|arch/nios2/|arch/openrisc/|arch/powerpc/|arch/sandbox/|arch/sh/|arch/sparc/|arch/x86/|board/a3000/|board/a4m072/|board/actux1/|board/actux2/|board/actux3/|board/actux4/|board/adder/|board/afeb9260/|board/ait/|board/alaska/|board/alphaproject/|board/altera/|board/amcc/|board/amirix/|board/AndesTech/|board/armltd/|board/astro/|board/atc/|board/atmark-techno/|board/atmel/|board/avionic-design/|board/avnet/|board/balloon3/|board/bc3450/|board/bct-brettl2/|board/bf506f-ezkit/|board/bf518f-ezbrd/|board/bf525-ucr2/|board/bf526-ezbrd/|board/bf527-ad7160-eval/|board/bf527-ezkit/|board/bf527-sdp/|board/bf533-ezkit/|board/bf533-stamp/|board/bf537-minotaur/|board/bf537-pnav/|board/bf537-srv1/|board/bf537-stamp/|board/bf538f-ezkit/|board/bf548-ezkit/|board/bf561-acvilon/|board/bf561-ezkit/|board/blackstamp/|board/blackvme/|board/bluegiga/|board/bluewater/|board/bmw/|board/br4/|board/buffalo/|board/BuS/|board/c2mon/|board/calao/|board/canmb/|board/CarMediaLab/|board/chromebook-x86/|board/cloudengines/|board/cm_t35/|board/cm-bf527/|board/cm-bf533/|board/cm-bf537e/|board/cm-bf537u/|board/cm-bf548/|board/cm-bf561/|board/cm4008/|board/cm41xx/|board/cm5200/|board/cmi/|board/cobra5272/|board/cogent/|board/comelit/|board/compal/|board/compulab/|board/corscience/|board/cpc45/|board/cpu86/|board/cpu87/|board/cray/|board/csb272/|board/csb472/|board/cu824/|board/d-link/|board/dave/|board/davedenx/|board/davinci/|board/dbau1x00/|board/denx/|board/dnp5370/|board/dvlhost/|board/earthlcd/|board/egnite/|board/eltec/|board/emk/|board/enbw/|board/eNET/|board/ep8248/|board/ep8260/|board/ep82xxm/|board/ep88x/|board/esd/|board/esg/|board/espt/|board/esteem192e/|board/etin/|board/etx094/|board/eukrea/|board/evb64260/|board/eXalion/|board/exmeritus/|board/fads/|board/faraday/|board/flagadm/|board/freescale/|board/friendlyarm/|board/funkwerk/|board/g2000/|board/gaisler/|board/galaxy5200/|board/gdsys/|board/gen860t/|board/genesi/|board/genietv/|board/gth2/|board/gw8260/|board/hale/|board/hermes/|board/hidden_dragon/|board/highbank/|board/htkw/|board/hymod/|board/ibf-dsp561/|board/icecube/|board/icu862/|board/idmr/|board/ids8247/|board/ifm/|board/imx31_phycore/|board/in-circuit/|board/incaip/|board/inka4x0/|board/intercontrol/|board/iomega/|board/ip04/|board/ip860/|board/ipek01/|board/iphase4539/|board/isee/|board/ispan/|board/ivm/|board/jornada/|board/jse/|board/jupiter/|board/karo/|board/keymile/|board/kmc/|board/korat/|board/kup/|board/LaCie/|board/lantec/|board/LEOX/|board/linkstation/|board/logicpd/|board/lubbock/|board/lwmon/|board/lwmon5/|board/manroland/|board/Marvell/|board/matrix_vision/|board/mbx8xx/|board/mcc200/|board/micronas/|board/mimc/|board/miromico/|board/ml2/|board/mosaixtech/|board/motionpro/|board/mousse/|board/mpc8308_p1m/|board/mpl/|board/mpr2/|board/ms7720se/|board/ms7722se/|board/ms7750se/|board/muas3001/|board/munices/|board/musenki/|board/mvblue/|board/mx1ads/|board/netphone/|board/netta/|board/netta2/|board/netvia/|board/ns9750dev/|board/nvidia/|board/nx823/|board/omicron/|board/openrisc/|board/overo/|board/palmld/|board/palmtc/|board/pandora/|board/pb1x00/|board/pcippc2/|board/pcs440ep/|board/pdm360ng/|board/phytec/|board/pm520/|board/pm826/|board/pm828/|board/pn62/|board/ppmc7xx/|board/ppmc8260/|board/pr1/|board/prodrive/|board/psyent/|board/pxa255_idp/|board/qemu-mips/|board/qi/|board/quad100hd/|board/quantum/|board/r360mpi/|board/raidsonic/|board/raspberrypi/|board/rattler/|board/rbc823/|board/renesas/|board/ronetix/|board/RPXClassic/|board/RPXlite/|board/RPXlite_dw/|board/rpxsuper/|board/RRvision/|board/rsdproto/|board/sacsng/|board/samsung/|board/sandbox/|board/sandburst/|board/sandpoint/|board/sbc405/|board/sbc8349/|board/sbc8548/|board/sbc8560/|board/sbc8641d/|board/sc3/|board/scb9328/|board/schulercontrol/|board/Seagate/|board/sheldon/|board/shmin/|board/siemens/|board/sixnet/|board/snmc/|board/socrates/|board/sorcery/|board/spc1920/|board/spd8xx/|board/spear/|board/st/|board/st-ericsson/|board/stx/|board/svm_sc8xx/|board/sx1/|board/syteco/|board/t3corp/|board/taskit/|board/tcm-bf518/|board/tcm-bf537/|board/technexion/|board/teejet/|board/ti/|board/timll/|board/toradex/|board/total5200/|board/tqc/|board/trizepsiv/|board/ttcontrol/|board/utx8245/|board/v37/|board/v38b/|board/ve8313/|board/vpac270/|board/w7o/|board/westel/|board/xaeniax/|board/xes/|board/xilinx/|board/zeus/|board/zipitz2/|board/zpc1900/|include/asm/" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="u-boot-2012.10-rc3.null.1670530298" name="u-boot-2012.10-rc3"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/u-boot-2012.10-rc3"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.cross.base.1966410826;cdt.managedbuild.toolchain.gnu.cross.base.1966410826.633500278;cdt.managedbuild.tool.gnu.c.compiler.base.960193621;cdt.managedbuild.tool.gnu.c.compiler.input.2020598362">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>
